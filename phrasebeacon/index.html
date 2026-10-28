@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhraseBeacon – Highlight Multiple Words on Any Webpage (Free Chrome Extension)</title>
+  <meta name="description" content="PhraseBeacon is a free Chrome extension that highlights multiple keywords on any webpage, each list in its own color. Count matches, jump between them, and keep everything private on your device.">
+  <link rel="canonical" href="https://toolsmithdev-collab.github.io/phrasebeacon/">
+  <link rel="icon" href="../assets/phrasebeacon-mark.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Toolsmith">
+  <meta property="og:title" content="PhraseBeacon – Highlight Multiple Words on Any Webpage">
+  <meta property="og:description" content="A free Chrome extension that highlights all your keywords at once, each list in its own color. Private by design.">
+  <meta property="og:url" content="https://toolsmithdev-collab.github.io/phrasebeacon/">
+  <meta property="og:image" content="https://toolsmithdev-collab.github.io/assets/phrasebeacon-highlights.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PhraseBeacon – Keyword Highlighter",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "description": "Highlight multiple words and phrases on any webpage in different colors. Count matches, jump between them, and keep everything private on your device.",
+    "url": "https://toolsmithdev-collab.github.io/phrasebeacon/",
+    "downloadUrl": "https://chromewebstore.google.com/detail/lhahcjlkmcgbfoonddfiigofgclgmfpo",
+    "image": "https://toolsmithdev-collab.github.io/assets/phrasebeacon-highlights.png",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Toolsmith", "url": "https://toolsmithdev-collab.github.io/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I highlight multiple words on a webpage in Chrome?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Install PhraseBeacon, click its toolbar icon, create a list, add your words, and save. Every matching word on the pages you visit is highlighted automatically, and each list can use its own color." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PhraseBeacon free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. PhraseBeacon is free, with no account and no paid tier." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does PhraseBeacon send my data anywhere?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Webpage text is processed on your device only to find matches, and is not stored or transmitted. Your keyword lists are saved in your browser's local extension storage. There are no servers, analytics, ads, or tracking." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does PhraseBeacon need access to all websites?",
+        "acceptedAnswer": { "@type": "Answer", "text": "To highlight your keywords wherever you browse, PhraseBeacon has to read the visible text of the page you are viewing. That text is checked locally and never leaves your device. Form fields, password fields, and areas you are currently editing are skipped." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use regular expressions or match whole words only?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each list can be case-sensitive, match whole words only, or use regular expressions." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it work on pages that load more content as I scroll?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. PhraseBeacon highlights new content as it appears, including infinite scroll and single-page apps, without rescanning the whole page." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I import a long list of keywords?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste many keywords at once, one per line or separated by commas, or import lists from a CSV file where each column becomes a list. You can also back up and restore everything with a JSON file." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does PhraseBeacon not work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Chrome does not allow extensions to run on its own pages, such as chrome:// settings pages and the Chrome Web Store, or inside Chrome's built-in PDF viewer, so highlights cannot appear there." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">T</span>Toolsmith</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="./" aria-current="page">PhraseBeacon</a>
+        <a href="support/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Highlight <mark class="mk-yellow">multiple words</mark> on <mark class="mk-blue">any webpage</mark></h1>
+          <p class="lead">PhraseBeacon finds every keyword you care about and marks it in color, so the important parts of a long page jump out instantly.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/lhahcjlkmcgbfoonddfiigofgclgmfpo">Add to Chrome – it's free</a>
+            <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+          </div>
+          <p class="fine-print">No account. No tracking. Everything runs on your device.</p>
+        </div>
+        <img class="hero-shot" src="../assets/phrasebeacon-highlights.png" width="1280" height="800" alt="A research article with keywords highlighted in yellow, coral, and blue, next to the PhraseBeacon panel showing three keyword lists and their match counts.">
+      </div>
+    </section>
+
+    <section aria-labelledby="uses-heading">
+      <div class="wrap">
+        <h2 id="uses-heading">Made for everyday reading</h2>
+        <p class="section-intro">Anywhere you scan long pages for the same words again and again, PhraseBeacon does the looking for you.</p>
+        <div class="grid">
+          <div class="card">
+            <span class="eyebrow">Job hunting</span>
+            <h3>Spot what matters in every job post</h3>
+            <p class="card-sample">Fully <mark class="mk-green">remote</mark> role, <mark class="mk-yellow">React</mark> experience, competitive <mark class="mk-coral">salary</mark>.</p>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Shopping</span>
+            <h3>Check ingredients at a glance</h3>
+            <p class="card-sample">Contains wheat, <mark class="mk-coral">peanuts</mark>, and <mark class="mk-coral">soy</mark>. May contain <mark class="mk-yellow">milk</mark>.</p>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Research &amp; study</span>
+            <h3>Track key terms across articles</h3>
+            <p class="card-sample">Results suggest <mark class="mk-blue">sleep quality</mark> affects <mark class="mk-yellow">memory</mark> more than duration.</p>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Contracts &amp; policies</span>
+            <h3>Never miss the clauses that count</h3>
+            <p class="card-sample">You may <mark class="mk-coral">cancel</mark> within 30 days. <mark class="mk-yellow">Auto-renewal</mark> applies after.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" aria-labelledby="how-heading">
+      <div class="wrap">
+        <h2 id="how-heading">How it works</h2>
+        <p class="section-intro">Set it up once. After that, just browse.</p>
+        <ol class="steps">
+          <li>
+            <h3>Add PhraseBeacon</h3>
+            <p>Install it from the Chrome Web Store and pin the icon to your toolbar.</p>
+          </li>
+          <li>
+            <h3>Create a list</h3>
+            <p>Name it, pick a color, and type or paste your keywords.</p>
+          </li>
+          <li>
+            <h3>Browse as usual</h3>
+            <p>Matching words light up on every page, and the icon shows how many were found.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <h2 id="features-heading">Everything you need, nothing you don't</h2>
+          <ul class="feature-list">
+            <li>Highlight many keywords at once, grouped into color-coded lists</li>
+            <li>Choose highlight and text colors, with a live preview</li>
+            <li>Turn each list on or off, or pause everything with one switch</li>
+            <li>Case-sensitive, whole-word, and regular-expression matching</li>
+            <li>Match count on the toolbar icon for the current page</li>
+            <li>Jump to the previous or next match with one click</li>
+            <li>A page minimap shows where every match is</li>
+            <li>Keeps up with infinite scroll and single-page apps</li>
+            <li>Import lists from CSV, back up and restore with JSON</li>
+            <li>Interface in English and Traditional Chinese</li>
+          </ul>
+        </div>
+        <img class="hero-shot" src="../assets/phrasebeacon-lists.png" width="1280" height="800" loading="lazy" alt="The PhraseBeacon settings panel showing several keyword lists with their colors.">
+      </div>
+    </section>
+
+    <section class="privacy-band" aria-labelledby="privacy-heading">
+      <div class="wrap">
+        <h2 id="privacy-heading">Private by design</h2>
+        <ul class="privacy-points">
+          <li>Runs entirely on your device</li>
+          <li>No account or sign-up</li>
+          <li>No servers, analytics, or ads</li>
+          <li>Page text is never stored or sent</li>
+        </ul>
+        <p>Your keyword lists live in your browser's local extension storage. PhraseBeacon reads the visible text of the page you are on only to find your keywords, and skips form fields, password fields, and areas you are editing.</p>
+        <p><a href="https://toolsmithdev-collab.github.io/phrasebeacon-privacy/privacy.html">Read the full privacy policy</a></p>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-heading">
+      <div class="wrap">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        <details>
+          <summary>How do I highlight multiple words on a webpage in Chrome?</summary>
+          <p>Install PhraseBeacon, click its toolbar icon, create a list, add your words, and save. Every matching word on the pages you visit is highlighted automatically, and each list can use its own color.</p>
+        </details>
+        <details>
+          <summary>Is PhraseBeacon free?</summary>
+          <p>Yes. PhraseBeacon is free, with no account and no paid tier.</p>
+        </details>
+        <details>
+          <summary>Does PhraseBeacon send my data anywhere?</summary>
+          <p>No. Webpage text is processed on your device only to find matches, and is not stored or transmitted. Your keyword lists are saved in your browser's local extension storage. There are no servers, analytics, ads, or tracking.</p>
+        </details>
+        <details>
+          <summary>Why does PhraseBeacon need access to all websites?</summary>
+          <p>To highlight your keywords wherever you browse, PhraseBeacon has to read the visible text of the page you are viewing. That text is checked locally and never leaves your device. Form fields, password fields, and areas you are currently editing are skipped.</p>
+        </details>
+        <details>
+          <summary>Can I use regular expressions or match whole words only?</summary>
+          <p>Yes. Each list can be case-sensitive, match whole words only, or use regular expressions.</p>
+        </details>
+        <details>
+          <summary>Does it work on pages that load more content as I scroll?</summary>
+          <p>Yes. PhraseBeacon highlights new content as it appears, including infinite scroll and single-page apps, without rescanning the whole page.</p>
+        </details>
+        <details>
+          <summary>Can I import a long list of keywords?</summary>
+          <p>Yes. Paste many keywords at once, one per line or separated by commas, or import lists from a CSV file where each column becomes a list. You can also back up and restore everything with a JSON file.</p>
+        </details>
+        <details>
+          <summary>Where does PhraseBeacon not work?</summary>
+          <p>Chrome does not allow extensions to run on its own pages, such as chrome:// settings pages and the Chrome Web Store, or inside Chrome's built-in PDF viewer, so highlights cannot appear there.</p>
+        </details>
+        <p class="fine-print">Something else? Visit the <a href="support/">support page</a>.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-heading">
+      <div class="wrap">
+        <h2 id="cta-heading">Find what matters, faster</h2>
+        <p class="section-intro">Free for Chrome. Set up in under a minute.</p>
+        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/lhahcjlkmcgbfoonddfiigofgclgmfpo">Add to Chrome – it's free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Toolsmith</span>
+      <nav aria-label="Footer">
+        <a href="../">Toolsmith</a>
+        <a href="support/">Support</a>
+        <a href="https://toolsmithdev-collab.github.io/phrasebeacon-privacy/privacy.html">Privacy policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

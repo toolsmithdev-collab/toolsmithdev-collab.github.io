@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toolsmithdev-collab.github.io/sitemap.xml
